@@ -11,10 +11,6 @@ main{
     display: flex;
     justify-content: center;
 }
-.talla__btn:checked{
-    background-color: rgba(161, 29, 29, 0.795);
-}
-
 
 
 @media only screen and (max-width: 768px){
@@ -139,9 +135,12 @@ main{
 }
 @media only screen and (min-width: 768px){
 /*desktop*/
+main{
+    justify-content: space-around;
+}
 .sidebar{
-    width: 25vw;
-    padding: 1rem 1rem;
+    width: 20vw;
+    padding: 1rem;
 }
 .sidebar h1{
     margin: 1rem 0;
@@ -188,26 +187,28 @@ main{
 }
 
 .zapatos{
-    width: 80vw;
+    width: 70vw;
+    padding-top: 4rem;
+    padding-right: 1rem;
 }
 
 .productos{
     padding: 1rem 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     transition: 2s;
 }
 
 .card{
     width: 15rem;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 3px solid rgb(180, 180, 180);
     outline: 3px solid transparent;
     transition: outline 1s ;
 
@@ -223,11 +224,12 @@ main{
     align-self: flex-end;
     color: #ccc;
     transition:color 1s;
+    z-index: 1000000;
 }
 
 .card img{
     padding: 1rem;
-    width: 15vw;
+    width: 15rem;
     
 }
 

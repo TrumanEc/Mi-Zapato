@@ -10,7 +10,7 @@ nav{
     height: 20vh;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #cccc;
+    border-bottom: 2px solid #cccc;
     padding: 1rem;
 }
 
@@ -238,19 +238,20 @@ footer{
 
     .logo{
         margin: 1rem;
-        width: 6rem;
+        width: 7vw;
         height: 6vh;
     }   
     
     .nav-1{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .nav-2{
+        padding: 0.5rem 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: flex-end;
     }
 

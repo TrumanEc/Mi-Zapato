@@ -8,7 +8,8 @@ function closeNav() {
 
 
 function like(heart){
-    heart.style.color != 'red' ? heart.style.color = 'red' : heart.style.color = '#ccc';   
+    heart.style.color != 'red' ? heart.style.color = 'red' : heart.style.color = '#ccc';  
+    window.event.stopPropagation(); 
 }
 
 
@@ -16,7 +17,7 @@ const createCard= (img,nombre,precio,referencia)=>{
     const content=`<div class="card" id="${nombre}" onclick="verProducto(this.id)">
                     <div class="like"onclick="like(this)">
                         <i id="heart" class="fas fa-heart"></i>
-                    </div>
+                    </div>   
                     <img src="./img/${img}" alt="">
                     <div class="info">
                         <p class="nombre">${nombre}</p>
@@ -30,7 +31,7 @@ const createCard= (img,nombre,precio,referencia)=>{
 
 const cargarPublicaciones = () =>{
     const productos = document.querySelector('.productos');
-    fetch('zapato.json')
+    fetch('./zapato.json')
         .then(respuesta => respuesta.json())
         .then(zapatos =>{
             zapatos.forEach(zapato => {
@@ -42,7 +43,7 @@ const cargarPublicaciones = () =>{
 function obtenerProducto() {
     const cod = localStorage.getItem("referencia");
     console.log(cod)
-    fetch('zapato.json')
+    fetch('./zapato.json')
         .then(respuesta => respuesta.json())
         .then(productos => {
             productos.forEach( producto => {
@@ -74,3 +75,7 @@ function cargarProducto(foto, nombre , precio, referencia){
     document.querySelector(".info").innerHTML = info;
     document.querySelector('#img-color').setAttribute('src',`./img/${foto}`);
 }
+
+document.querySelector('.logo_container').addEventListener('click', ()=>{
+    window.open("../index.html", "_self");
+})
