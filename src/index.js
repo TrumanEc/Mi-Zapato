@@ -30,7 +30,7 @@ const createCard= (img,nombre,precio,referencia)=>{
 
 const cargarPublicaciones = () =>{
     const productos = document.querySelector('.productos');
-    fetch('zapato.json')
+    fetch('./zapato.json')
         .then(respuesta => respuesta.json())
         .then(zapatos =>{
             zapatos.forEach(zapato => {
@@ -42,7 +42,7 @@ const cargarPublicaciones = () =>{
 function obtenerProducto() {
     const cod = localStorage.getItem("referencia");
     console.log(cod)
-    fetch('zapato.json')
+    fetch('./zapato.json')
         .then(respuesta => respuesta.json())
         .then(productos => {
             productos.forEach( producto => {
