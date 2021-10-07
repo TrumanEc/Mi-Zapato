@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/49c0d04d5e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/categoria.css">
+    <title>Categoria</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-1">
+            <div class="logo_container">
+                <div class="logo"></div>
+                <h1>MI ZAPATO</h1>
+            </div>
+            <span style="font-size:30px;cursor:pointer" id="open" onclick="openNav()">&#9776;</span>
+            <div class="pages">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="pages-content">
+                    <a href="">HOMBRE</a> 
+                    <a href="">MUJER</a> 
+                    <a href="">BLOG</a> 
+                    <a href="">HISTORIAS</a> 
+                    <a href="">TIENDAS</a> 
+                </div>
+            </div>
+        </div>
+        <div class="nav-2">
+            <div class="search"><input type="search" name="busqueda" id="" placeholder="BUSCAR"></div>
+            <p>ENVIO GRATIS PARA PEDIDOS SUPERIORES A $300.000</p>
+            <i></i><span>CARRITO</span>
+        </div>
+    </nav>
+
+    <main>
+        <div class="sidebar">
+            <p>HUSHPIPPIESCO / CALZADO</p>
+            <h1>CALZADO</h1>
+            <p>TODOS(x)</p>
+            <div class="especificaciones">
+                <h4 class="especificaciones__titulo">TALLA</h4>
+                <div class="tallas">
+                    <input type="button" value="5" class="talla__btn">
+                    <input type="button" value="5.5" class="talla__btn">
+                    <input type="button" value="6" class="talla__btn">
+                    <input type="button" value="6.5" class="talla__btn">
+                    <input type="button" value="7" class="talla__btn">
+                    <input type="button" value="7.5" class="talla__btn">
+                    <input type="button" value="8" class="talla__btn">
+                    <input type="button" value="8.5" class="talla__btn">
+                    <input type="button" value="9" class="talla__btn">
+                    <input type="button" value="9.5" class="talla__btn">
+                </div>
+                <div class="especificaciones__tipo">
+                    <h4 class="especificaciones__titulo">PRECIO</h4>
+                    <p>$150.000 - $300.000 (10)</p>
+                </div>
+                <div class="especificaciones__tipo">
+                    <h4 class="especificaciones__titulo">MATERIAL</h4>
+                    <p>Cuero(18) <br> Nubuck(24)</p>
+                </div>
+                <div class="especificaciones__tipo">
+                    <h4 class="especificaciones__titulo">COLOR</h4>
+                    <p>NEGRO <br> AZUL <br> CAFE <br> OTRO</p>
+                </div>
+                <div class="especificaciones__tipo">
+                    <h4 class="especificaciones__titulo">TECNOLOGÍA</h4>
+                    <p>HPO2Flex <br> BioBevel <br> FlexGroove</p>
+                </div>
+            </div>
+        </div>
+        <div class="zapatos">
+            <div class="productos">                
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="contact">
+            <h1>@mizapato</h1>
+            <div class="redes">
+                <i class="fab fa-facebook-f" style="font-size: 1.5rem; margin: 0.5rem;"></i>
+                <i class="fab fa-instagram" style="font-size: 1.5rem; margin: 0.5rem;"></i>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+        <div class="footer__column">
+            <p>SERVICIO AL CLIENTE</p>
+            <a href="">CONTÁCTENOS</a>
+            <a href="">CAMBIOS Y DEVOLUCIONES</a>
+            <a href="">POLÍTICAS DE LA TIENDA</a>
+            <a href="">POLÍTICAS DE DATOS</a>
+        </div>
+        
+        <div class="footer__column">
+            <p>MI CUENTA</p>
+            <a href="">MIS PEDIDOS</a>
+            <a href="">MIS DEVOLUCIONES</a>
+        </div>
+        
+        <div class="footer__column">
+            <p>RECURSOS</p> 
+            <a href="">TIENDAS</a>
+            <a href="">DEVOLUCIONES</a>
+        </div>
+        
+        <div class="footer__column">
+            <p>NEWSLETTER</p>
+            <a href="">Regístrate para ser el primero en recibir nuestras noticias</a>
+            <div class="mail">                
+                <input type="text" placeholder="E-MAIL"><button class="send">></button>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script>
+        cargarPublicaciones(); 
+        
+    </script>
+</body>
+</html>
